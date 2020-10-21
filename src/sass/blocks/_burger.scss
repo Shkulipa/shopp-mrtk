@@ -1,0 +1,13 @@
+// variables, mixins
+@import "../base/_variables";
+@import "../base/_mixins";
+
+.burger-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    &.open {
+        display: flex;
+    }
+}

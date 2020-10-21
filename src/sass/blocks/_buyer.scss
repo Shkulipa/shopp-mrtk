@@ -1,0 +1,151 @@
+// variables
+@import "../base/variables";
+@import "../base/mixins";
+
+.buyer {
+  display: none;
+
+  &__wrapper {
+    position: fixed;
+    width: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    bottom: 25px;
+    right: 25px;
+
+    z-index: 1000;
+
+    border-radius: 30px;
+
+    background-color: $white;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    padding: 3px;
+
+    font-weight: 600;
+
+    &__close {
+      position: absolute;
+
+      width: 100%;
+      max-width: 31px;
+
+      right: 10px;
+      top: -45px;
+
+      transition: 0.2s ease;
+
+      &:hover {
+        transition: 0.2s ease;
+        transform: scale(1.1) rotateZ(-180deg);
+        cursor: pointer;
+      }
+    }
+
+    &__avatar {
+      width: 100%;
+      max-width: 70px;
+
+      margin: 0 20px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      font-size: 1.1rem;
+
+      margin: 20px 10px;
+
+      &__name,
+      &__text,
+      &__time,
+      &__date {
+        margin-bottom: 10px;
+      }
+
+      &__date {
+        margin-bottom: 0;
+      }
+
+      &__text {
+        .link {
+          font-weight: 900;
+          text-transform: uppercase;
+          color:  $main-color;
+          text-decoration: none;
+
+          transition: .2s ease;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .buyer {
+    &__wrapper {
+      width: 100%;
+      max-width: 300px;
+
+      bottom: 10px;
+      right: 10px;
+
+      &__close {
+        max-width: 30px;
+        right: 0px;
+        top: -41px;
+      }
+
+      &__content {
+        &__text {
+          .link {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-sm) {
+  .buyer {
+    display: flex;
+    &__wrapper {
+      
+      flex-direction: column;
+      max-width: 175px;
+      padding: 0;
+
+      &__avatar {
+        margin: 10px 0;
+      }
+
+      &__content {
+        font-size: .9rem;
+        margin: 5px 10px;
+
+        &__name,
+        &__text,
+        &__time,
+        &__date {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

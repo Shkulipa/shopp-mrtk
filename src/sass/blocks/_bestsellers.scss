@@ -1,0 +1,104 @@
+// variables, mixins
+@import "../base/variables";
+@import "../base/mixins";
+
+
+.bestsellers {
+    margin-bottom: 100px;
+
+    &__title {
+        text-align: center;
+
+        margin-bottom: 25px;
+    }
+    
+    &__slider {
+        padding: 0 25px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            
+            margin: 0 15px;
+            padding: 20px;
+
+            text-decoration: none;
+
+            transition: .2s ease;
+
+            &:hover {
+                @include hover-scale;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &__img {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 15px;
+
+                border-radius: 12px;
+                border: 3px solid transparent;
+                background-image: linear-gradient(white, white), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+
+                &__tags {
+                    position: absolute;
+                    z-index: 3;
+                    top: 5%;
+                
+                    &__block {
+                        display: inline-block;
+                        padding: 5px 15px;
+                        color: $white;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: .7);
+                    }
+
+                    .sale, .discount {
+                        background-color: #db250a;
+                    }
+
+                    .new {
+                        background-color: #3a94be;
+                    }
+
+                    .hit {
+                        background-color: #6ea21c;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 365px;
+                }
+            }
+
+            &__title {
+                color: $main-color;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .bestsellers {
+        &__slider {
+            padding: 0;
+
+            &__item {
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+}

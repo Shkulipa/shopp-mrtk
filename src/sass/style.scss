@@ -1,0 +1,56 @@
+// libs
+@import "libs/slick-style";
+@import "libs/animate.scss";
+
+// variables
+@import "base/variables";
+
+// fonts
+@import "libs/font";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $black;
+  background-color: $bg-color;
+  overflow-x:hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// blocks
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/policy";
+@import "blocks/modals";
+@import "blocks/buyer";
+@import "blocks/intro";
+@import "blocks/catigories";
+@import "blocks/catalog";
+@import "blocks/slider-style";
+@import "blocks/title";
+@import "blocks/bestsellers";
+@import "blocks/footer";
+@import "blocks/burger";
+
+
+

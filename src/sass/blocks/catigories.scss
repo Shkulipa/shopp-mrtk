@@ -1,0 +1,143 @@
+// variables, mixins
+@import "../base/_variables";
+@import "../base/_mixins";
+
+.catigories {
+    &__slider {
+        padding: 0 50px;
+
+        &__item {
+            display: inline-block;
+            text-decoration: none;
+            transition: .2s ease;
+
+            margin: 15px 0;
+
+            &.active {
+                border-radius: 18px;
+                background-color: rgba(51, 51, 51, 0.15);
+
+                .catigories__slider__item__wrapper {
+                    &__title {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 15px;
+
+                &__img {
+                    position: relative;
+                    width: 125px;
+                    height: 125px;
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background-image: linear-gradient(white, white), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    background-origin: border-box;
+                    background-clip: content-box, border-box;
+                    margin-bottom: 15px;
+                }
+
+                &__title {
+                    position: inherit;
+                    bottom: 0;
+                    text-align: center;
+
+                    margin: 0;
+
+                    color: $main-color;
+                    font-weight: 700;
+                    font-size: .9rem;
+
+                    &::after {
+                        position: relative;
+                        content: "";
+                        display: block;
+                        background-color: $main-color;
+                        height: 3px;
+                        width: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                @include hover-scale;
+            }
+
+            &:hover &__wrapper__title::after{
+                @include hover-width-100; 
+            }
+        }
+    }
+}
+
+
+@media (max-width: $tablet) {
+    .catigories {
+        &__slider {
+            padding: 0 45px;
+            &__item {
+                &__wrapper {
+                    &__img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .catigories {
+        &__slider {
+            padding: 0;
+
+            &__item {
+                &__wrapper {
+                    &__img {
+                        width: 95px;
+                        height: 95px;
+                    }
+
+                    &__title {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-sm) {
+    .catigories {
+        &__slider {
+            &__item {
+                &__wrapper {
+                    &__img {
+                        width: 65px;
+                        height: 65px;
+                    }
+
+                    &__title {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

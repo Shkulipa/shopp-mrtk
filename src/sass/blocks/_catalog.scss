@@ -1,0 +1,186 @@
+// variables, mixins
+@import "../base/variables";
+@import "../base/mixins";
+
+.catalog {
+    margin-bottom: 150px;
+
+    .no-products {
+        display: none;
+        justify-content: center;
+
+        width: 100%;
+
+        &__text {
+            font-size: 2rem;
+            color: $main-color;
+            text-align: center;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            
+            margin: 0 15px;
+            padding: 20px;
+
+            text-decoration: none;
+
+            transition: .2s ease;
+
+            &:hover {
+                @include hover-scale;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+
+            &__img {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 15px;
+
+                &__tags {
+                    position: absolute;
+                    z-index: 3;
+                    top: 5%;
+                
+                    &__block {
+                        display: inline-block;
+                        padding: 5px 15px;
+                        color: $white;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: .7);
+                        font-weight: 700;
+                    }
+
+                    .sale, .discount, .special-offer {
+                        background-color: rgba(219, 37, 10, .9);
+                    }
+
+                    .new {
+                        background-color: rgba(58, 148, 190, 0.9);
+                    }
+
+                    .hit {
+                        background-color: rgba(111, 162, 28, 0.9);
+                    }
+                }
+
+                img, video {
+                    width: 100%;
+                    max-width: 365px;
+
+                    border-radius: 12px;
+                    border: 3px solid transparent;
+                    background-image: linear-gradient(white, white), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    background-origin: border-box;
+                    background-clip: content-box, border-box;
+                }
+            }
+
+            &__title {
+                color: $main-color;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .catalog {
+        margin-bottom: 100px;
+
+        &__items {
+            &__item {
+                width: 29%;
+                padding: 0;
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    transform: none;
+                }
+
+                &__img {
+                    &__tags {
+                        &__block {
+                            font-size: 0.9rem;
+                            margin-bottom: 10px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .catalog {
+        &__items {
+            &__item {
+                width: 40%;
+
+                &__img {
+                    &__tags {
+                        top: 0;
+                        margin-top: 10px;
+
+                        &__block {
+                            font-size: 1.1rem;
+                            margin-bottom: 7px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+
+                &__title {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-sm) {
+    .catalog {
+        &__items {
+            &__item {
+                width: 40%;
+
+                &__img {
+                    margin-bottom: 5px;
+
+                    &__tags {
+                        top: 0;
+                        margin-top: 5px;
+
+                        &__block {
+                            font-size: .5rem;
+                            margin-bottom: 0;
+                            padding: 3px 7px;
+                        }
+                    }
+                }
+
+                &__title {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

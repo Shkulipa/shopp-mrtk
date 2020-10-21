@@ -1,0 +1,149 @@
+// variables, mixins
+@import "../base/_variables";
+@import "../base/_mixins";
+
+.header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.5);
+
+    &-btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .4s ease;
+
+        &__burger {
+            width: 26px;
+            height: 4px;
+            background-color: $main-color;
+            border-radius: 4px;
+            transition: all .4s ease;
+
+            &::after, &::before {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 26px;
+                height: 4px;
+                background-color: $main-color;
+                border-radius: 4px;
+                transition: all .4s ease;
+            }
+
+            &::before {
+                transform: translateY(-8px);
+            }
+
+            &::after {
+                transform: translateY(8px);
+            }
+        }
+
+        // animation
+        &.open {
+            .header-btn__burger {
+                transform: translateX(-26px);
+                background: transparent;
+
+                &::before {
+                    transform: rotate(45deg) translate(18px, -18px);
+                }
+
+                &::after {
+                    transform: rotate(-45deg) translate(18px, 18px);
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 5px;
+    }
+
+    &__logo {
+        transition: .2s ease;
+
+        &__img {
+            width: 100%;
+            max-width: 125px;
+        }
+
+        &:hover {
+            @include hover-scale;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            margin: 10px;
+
+            color: $main-color;
+            font-weight: 900;
+
+            text-decoration: none;
+
+            transition: .2s ease;
+
+            &::after {
+                position: relative;
+                content: "";
+                display: block;
+                height: 2px;
+                width: 0%;
+                background-color: $main-color;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:hover {
+                @include hover-scale;
+            }
+
+            &:hover:after {
+                @include hover-width-100; 
+            }
+        }
+    }
+}
+
+
+@media (max-width: $mobile) {
+    .header {
+        &__nav {
+            &__item {
+                font-size: .9rem;
+            }
+        }
+
+        &__logo {
+            &__img {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-sm) {
+    .header {
+        &-btn {
+            display: flex;
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+}

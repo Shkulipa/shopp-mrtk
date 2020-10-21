@@ -1,0 +1,98 @@
+.slick-prev,
+.slick-next {
+  position: absolute;
+  border: none;
+  background: none;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 7;
+
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+
+  transition: 0.2s linear;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.slick-next {
+  left: auto;
+  right: 0;
+}
+
+.slick-prev img,
+.slick-next img {
+  transition: 0.2s linear;
+  opacity: .3;
+}
+
+.slick-next img {
+  transform: rotateZ(180deg);
+}
+
+.slick-prev img:hover {
+  transition: 0.2s linear;
+  opacity: .7;
+  transform: scale(1.3);
+}
+
+.slick-next img:hover {
+  opacity: .7;
+  transform: scale(1.3) rotateZ(180deg);
+}
+
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style-type: none;
+  padding: 0;
+}
+
+.slick-dots div {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  outline: none;
+  color: transparent;
+
+  //цвет НЕ АКТИВНЫХ кружочков
+  background-color: rgba(51, 51, 51, 0.4);
+
+  border: none;
+
+  margin: 20px 5px 0 5px;
+  padding: 2px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  transition: 0.2s linear;
+}
+
+.slick-dots li.slick-active button {
+  transition: 0.2s linear;
+  transform: scale(1.3);
+
+  //цвет АКТИВНОГО кружочков
+  background-color:rgba(51, 51, 51, 1);
+}
+
+@media (max-width: 565px) {
+  .slick-dots button {
+    width: 6px;
+    height: 6px;
+  }
+  
+}

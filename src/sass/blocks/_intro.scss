@@ -1,0 +1,29 @@
+// variables
+@import "../base/_variables";
+
+.intro {
+    margin-bottom: 100px;
+
+    &__slider {
+        img, video, picture {
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            margin: 0 15px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-sm) {
+    .intro {
+        &__slider {
+            img, video {
+                margin: 0;
+            }
+        }
+    }
+}
