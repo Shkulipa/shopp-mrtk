@@ -19,7 +19,7 @@ $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => '%2b' . $phone,
   'Вопрос: ' => $question,
-  'Веб-сайт: ' => 'shopping-market.pp.ua',
+  'Веб-сайт: ' => 'shopping-market',
 );
 
 foreach($arr as $key => $value) {
