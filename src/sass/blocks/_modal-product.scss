@@ -37,7 +37,11 @@
     position: fixed;
     top: 10px;
 
+<<<<<<< HEAD
     @media (max-width: $mobile-sm) {
+=======
+    @media (max-width: $mobile) {
+>>>>>>> product-modul-window
       right: 10px;
     }
   }
@@ -227,13 +231,17 @@
       justify-content: center;
       width: 30%;
       margin: 0 auto;
-      
-
+    
+    
       transition: .2s ease;
       border-radius: 12px;
       background-color: transparent;
 
       border: none;
+
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
 
       &:hover {
         transition: .2s ease;
@@ -249,6 +257,10 @@
         width: 100%;
         max-width: 30px;
         margin-right: 10px;
+
+        @media (max-width: $mobile-sm) {
+          max-width: 25px;
+        }
       }
   
       &__text {
@@ -256,10 +268,15 @@
         font-size: 1.1rem;
         font-weight: 700;
         padding: 0;
-      }
 
+<<<<<<< HEAD
       @media (max-width: $mobile) {
         width: 100%;
+=======
+        @media (max-width: $mobile-sm) {
+          font-size: .9rem;
+        }
+>>>>>>> product-modul-window
       }
     }
   }

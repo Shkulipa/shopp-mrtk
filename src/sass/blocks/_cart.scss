@@ -1,0 +1,16 @@
+// variables, mixins
+@import "../base/variables";
+@import "../base/mixins";
+
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &__catalog {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

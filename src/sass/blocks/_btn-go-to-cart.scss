@@ -1,0 +1,33 @@
+// variables, mixins
+@import "../base/_variables";
+@import "../base/_mixins";
+
+.window-cart {
+    position: fixed;
+    z-index: 999;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    background-image: linear-gradient(white,#fff),radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+
+    @media (max-width: $mobile) {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    &__title {
+        font-size: 1rem;
+        margin: 10px;
+        color: #333;
+        font-weight: 800;
+
+        @media (max-width: $mobile-sm) {
+            font-size: .8rem;
+        }
+    
+    }
+}
