@@ -36,6 +36,10 @@
   .modal__close {
     position: fixed;
     top: 10px;
+
+    @media (max-width: $mobile-sm) {
+      right: 10px;
+    }
   }
 
   .modal-info__content {
@@ -254,7 +258,7 @@
         padding: 0;
       }
 
-      @media (max-width: $mobile-sm) {
+      @media (max-width: $mobile) {
         width: 100%;
       }
     }
