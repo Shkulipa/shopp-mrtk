@@ -199,18 +199,7 @@
     <div class="container">
       <h2 class="title">Хиты продаж</h2>
       <div class="bestsellers__slider">
-        <!-- <a class="bestsellers__slider__item" target="_blank" href="#">
-          <div class="bestsellers__slider__item__img">
-            <img src="img/prew-elaslim.jpg" alt="img">
-            <div class="bestsellers__slider__item__img__tags">
-              <div class="bestsellers__slider__item__img__tags__block sale">#Распродажа</div><br/>
-              <div class="bestsellers__slider__item__img__tags__block new">#Новинка</div><br/>
-              <div class="bestsellers__slider__item__img__tags__block hit">#Хит</div><br/>
-              <div class="bestsellers__slider__item__img__tags__block discount">-54%</div>
-            </div>
-          </div>
-          <div class="bestsellers__slider__item__title">Революционные нервущиеся колготки!</div>
-        </a> -->
+        <!-- хит продаж -->
       </div>
     </div>
   </section>
@@ -327,9 +316,6 @@
         в ближайшее время!</div>
     </div>
   
-  
-  
-  
     <div class="modal-cart" id="cart">
       <div class="container">
         <div class="modal-cart__items">
@@ -337,34 +323,7 @@
   
           <h3 class="modal-cart__items__title">Ваша корзина:</h3>
           <form class="modal-cart__items__products" id="cart-products">
-            <!-- <div class="modal-cart__items__products__product">
-                  <div class="modal-cart__items__products__product__img-and-title">
-                    <picture>
-                      <source srcset="img/prew-socks.webp" type="image/webp">
-                      <img class="modal-cart__items__products__product__img-and-title__img" src="img/prew-socks-222px.jpg"
-                        alt="img">
-                    </picture>
-                    <div class="modal-cart__items__products__product__img-and-title__title">
-                      Силиконовые увлажняющие носочки против трения стопы с супинатором!
-                    </div>
-                  </div>
-                  <div class="modal-cart__items__products__product__counts-and-price">
-                    <button class="modal-cart__items__products__product__counts-and-price__delete" data-delete="YAooUP">
-                      <img src="icons/garbage-can.svg" alt="img" data-delete="YAooUP">
-                    </button>
-                    <div class="modal-cart__items__products__product__counts-and-price__counts">
-                      <button class="modal-cart__items__products__product__counts-and-price__counts__button minus" data-counts="YAooUP">
-                        <img src="icons/minus.svg" alt="alt">
-                      </button>
-                      <input class="modal-cart__items__products__product__counts-and-price__counts__input" type="number" maxlength="5"
-                      value="">
-                      <button class="modal-cart__items__products__product__counts-and-price__counts__button plus" data-counts="YAooUP">
-                        <img src="icons/add.svg" alt="alt">
-                      </button>
-                    </div>
-                    <div class="modal-cart__items__products__product__counts-and-price__price">149 &#8372;</div>
-                  </div>
-                </div> -->
+            <!-- корзина -->
           </form>
           <div class="modal-cart__items__total-price">Общая цена: <span id="total-price">0</span> &#8372;</div>
           <button id="to-form-window" class="modal-cart__items__to-order-form">Оформить заказ</button>
@@ -378,7 +337,7 @@
     </div>
   
     
-    <div class="modal-adress-forms" id="modal-adress-forms">
+    <div class="modal modal_mini modal-adress-forms" id="modal-adress-forms">
       <div id="close-adress-form" class="modal__close">&times;</div>
       <div class="modal__subtitle">Заполните пожалуйста форму</div>
       <form action="#" id="adress-form">
@@ -388,7 +347,7 @@
         <label for="check1" class="error phone">Введите пожалуйста ваш номер телефона</label>
         <input  id="phone-adress-form" class="modal__form__input" name="phone" type="tel" placeholder="Ваш номер телефона">
   
-        <input class="hidden-input-products" id="products" name="products" type="text">
+        <input class="hidden-input-products" id="products" name="products" type="hidden">
         <button class="modal__form__button">Заказ подтверждаю</button>
       </form>
     </div>
@@ -412,13 +371,19 @@
         <button class="modal__form__button">Отправить</button>
       </form>
     </div>
-  </div>
-  <!-- /overlay -->
+
+    <!-- информация о товаре -->
+    <div class="modal-info" id="modal-info">
+        <div id="close-modal-info" class="modal__close">&times;</div>
+        <div class="modal-info__content" id="modal-info__content">
+          <!-- информация о товаре -->
+        </div>
+    </div>
+  </div> <!-- overlay -->
 
   <div id="nav-cart" class="window-cart">
     <div class="window-cart__title">Перейти в корзину</div>
   </div>
-
 
 
   <!-- Свой скрипт -->

@@ -5,11 +5,14 @@ let catalog = [
     dataCategory: "Игрушки",
     imgWebPrew: "img/prew-fairy.webp",
     imgJpgPrew: "img/prew-fairy.jpg",
+    descr:
+      "Летающие Феи – отличный подарок для маленькой мечтательницы. Кукла, словно по волшебству, взмывает в небо, открывая простор детской фантазии. Она держит дистанцию от любой поверхности (от пола, ладони). Волшебная фея имеет встроенный моторчик и цветные пропеллеры, которые являются частью наряда сказочного персонажа. А еще – сенсорные датчики, которые контролируют наличие вблизи предметов и держат полет игрушки на определенном расстоянии от них. Управлять же ею можно, поднеся снизу ладошку: датчик сработает на наличие предметаи куколка поднимется выше. Выше ладошка – выше полет, опуская же ладонь можно уменьшать и высоту полета волшебной феи.Никакого радиоуправления, сложных приспособлений или дополнительных условий — только ловкость и быстрота движенийпомогут фее оставаться в воздухе. Закажите фею Flying Fairy прямо сейчас и порадуйсте свою маленькую мечтательницу!Преимущества: Волшебный полет - Единственная фея в мире,которая действительно летает. Благодаря уникальной технологии,Фея держитдистанцию от любых поверхностей, и дети могут легко управлять Феей своимиладошками; Красивая упаковка - феяпродаётся в красивомдомике-коробке, что избавит мам, пап, бабушек и дедушек от поиска подарочнойупаковки и сразупривлечёт внимание ребёнка; Сказочный дизайн - мир сказочных героевстановится ближе с этими красавицами. Яркиекостюмы, полупрозрачные крылья, атакже профессиональное исполнение всех частей тела, черт лица,обеспечиваютмаксимальную реалистичность игры; Характеристики: Время полета: 6-8 минут; Время зарядки : 25-30 минут;Высота куклы: 18 см; Материал: мягкий, ударопрочный пластик; в комплекте(кукла - 1 шт USB-зарядное устройство - 1 штзапасные лопасти - 1 шт); Вес: 340 г",
+    photos: ['product-fairy/fairy-1.jpg', 'product-fairy/fairy-2.jpg', 'product-fairy/fairy-3.jpg', 'product-fairy/fairy-4.jpg'],  
     sale: true,
     new: true,
     hit: true,
     discount: true,
-    discountValue: "-53%",
+    discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
     title: "Летающая фея",
@@ -26,11 +29,14 @@ let catalog = [
     dataCategory: "Игрушки",
     imgWebPrew: "img/prew-car-transformer.webp",
     imgJpgPrew: "img/prew-car-transformer.jpg",
+    descr:
+      "Отличия этого от других трансформеров это возможность с помощью взмаха руки превратить авто в трансформер и наоборот это действительно очень круто.<br /> Возможности трансформера: <ul><li>Робот трансформируется в автомобиль и обратно при помощи одной кнопки на пульте ДУ или превращается втрансформер при приближении руки.</li><li>Управляется пультом и ездит как в виде машинки, так и в виде трансформера.</li><li>Поворачивает на 360 градусов.</li><li>Световые эффекты (фары загораются при изменении состояния и езде в разных направлениях: вперед, назад, влево, вправо).</li><li>Звуковые эффекты и музыка.</li></ul>",
+    photos: ['car-transformer/car-transformer-1.jpg', 'car-transformer/car-transformer-2.jpg', 'car-transformer/car-transformer-3.jpg', 'car-transformer/car-transformer-4.jpg'],  
     sale: true,
     new: true,
     hit: true,
     discount: true,
-    discountValue: "-53%",
+    discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
     title: "Машинка трансформер на радиоуправлении",
@@ -47,11 +53,14 @@ let catalog = [
     dataCategory: "Игрушки",
     imgWebPrew: "img/prew-svet.webp",
     imgJpgPrew: "img/prew-svet.jpg",
+    descr:
+      "Набор для рисования Рисуй светом станет любим подарком для маленьких художников. Он порадует своими световыми возможностями, потому что рисовать в темноте светящуюся картину будет интересно не только самым маленьким. Этот планшет - уникальный. Он надолго увлечет вашего ребенка. Ручка, которая светится в темноте будет служить волшебной палочкой. А ваш ребенок превратится в настоящего волшебника.Проявите свое настроение вместе с ребенком на светящемся планшете с картона размером: А3, A4, A5.<br/><br/>Набор для рисования Рисуй светом А3, A4, A5 - это фотолюминисцентный ПВХ в рамочке. Он поглощает свет от лампы или от солнца. За счет этого продолжительное время светится в темноте.<br/><br/>Подарите своему ребенку радость. Пусть он станет волшебником, который умеет творить картины в темноте.",
+    photos: ['draw-svetom/draw-svetom-1.jpg', 'draw-svetom/draw-svetom-2.jpg', 'draw-svetom/draw-svetom-3.jpg', 'draw-svetom/draw-svetom-4.jpg', 'draw-svetom/draw-svetom-5.jpg', 'draw-svetom/draw-svetom-6.jpg'],  
     sale: true,
     new: true,
     hit: true,
     discount: true,
-    discountValue: "-53%",
+    discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
     title: "Набор для рисования светом",
@@ -68,11 +77,14 @@ let catalog = [
     dataCategory: "Игрушки",
     imgWebPrew: "img/prew-magic-track.webp",
     imgJpgPrew: "img/prew-magic-track.jpg",
+    descr:
+      "Готовы ли Вы к настоящей гонке?<br><br>Представляем вам Волшебную трассу Magic Tracks — потрясающий гоночный трек, который принимает любую форму и светится в темноте!<br><br>Светящийся Magic Tracks является совершенно новым и необычным гоночным треком. Такого изгиба гоночной дороги и необыкновенного свечения в темноте Вы никогда не видели! Вы можете изогнуть трассу на 360˚<br><br>Просто соедините кусочки Трассы вместе, и Вы получите полностью настроенную трассу своего собственного творения. А еще лучше, когда вы выключаете свет и погружаетесь в магию Magic Tracks!<br><br>ПРЕИМУЩЕСТВА:<ul><li>Легко собрать собственную трассу за считанные секунды</li><li>Быстро сворачивается для хранения</li><li>Все детали набора сделаны из экологически безопасного прочного пластика</li><li>Машинка красного цвета с пятью светодиодными огнями.</li><li>Набор наклеек.</li><li>Гоночный трек светится в темноте.</li><li>Гибкая трасса — ей можно придать любую форм</li></ul>",
+    photos: ['magic-track/magic-track-1.jpg', 'magic-track/magic-track-2.jpg', 'magic-track/magic-track-3.jpg', 'magic-track/magic-track-4.jpg'],  
     sale: true,
     new: true,
     hit: true,
     discount: true,
-    discountValue: "-53%",
+    discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
     title: "Светящееся машинки с трассой",
@@ -89,11 +101,14 @@ let catalog = [
     dataCategory: "Автотовары",
     imgWebPrew: "img/prew-ice-scrapper.webp",
     imgJpgPrew: "img/prew-ice-scrapper.jpg",
+    descr:
+      "Конус - скребок для очистки стекла автомобиля от снега и льда<br><br>Конусообразный скребок для удаления льда и снега очистит стекла Вашего автомобиля намного быстрее, чем привычный всем традиционный скребок. Данный скребок сделан из пластика, очень легкий, его удобно держать в руке и он не царапает стекло! Для удаления снега достаточно водить круговыми движениями широкой частью скребка по стеклу.  Вторая сторона скребка, меньшего диаметра, может быть использована как ледокол. И приятный бонус - скребок можно использовать как воронку, например, чтобы добавлять жидкость для омывателя в Ваш автомобиль.<br><br>Размер: большой конус - диаметр 15 см, высота 15 см; маленький конус - диаметр 7 см, высота 5 см<br><br>Материал: АБС-пластик",
+    photos: ['ice-scrapper/ice-scrapper-1.jpg', 'ice-scrapper/ice-scrapper-2.jpg', 'ice-scrapper/ice-scrapper-3.jpg'],  
     sale: true,
     new: true,
     hit: true,
     discount: true,
-    discountValue: "-53%",
+    discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
     title: "Cкребок для автомобиля",
@@ -380,43 +395,43 @@ catalogAssArrFunction();
 
 let outCatalog = '';
 for(let key in catalog) {
-  outCatalog += `<div  class="catalog__items__item" target="_blank" data-category=${catalog[key].dataCategory}>`;
-  outCatalog += `<a href="${catalog[key].link}" target="_blank" class="catalog__items__item__img">`;
+  outCatalog += `<div  class="catalog__items__item" target="_blank" data-category=${catalog[key].dataCategory} data-idDescr=${catalog[key].dataId}>`;
+  outCatalog += `<div target="_blank" class="catalog__items__item__img" data-idDescr=${catalog[key].dataId}>`;
   outCatalog +=
     `<picture>
-      <source srcset="${catalog[key].imgWebPrew}" type="image/webp">
-      <img src="${catalog[key].imgJpgPrew}" alt="img">
+      <source srcset="${catalog[key].imgWebPrew}" type="image/webp" data-idDescr=${catalog[key].dataId}>
+      <img src="${catalog[key].imgJpgPrew}" alt="img" data-idDescr=${catalog[key].dataId}>
     </picture>`;
   outCatalog +=
-    `<div class="catalog__items__item__img__tags">` +
+    `<div class="catalog__items__item__img__tags" data-idDescr=${catalog[key].dataId}>` +
     `${
       catalog[key].sale === true
-        ? '<div class="catalog__items__item__img__tags__block sale">#Распродажа</div><br />'
+        ? `<div class="catalog__items__item__img__tags__block sale" data-idDescr=${catalog[key].dataId}>#Распродажа</div><br />`
         : ''
     }` +
     `${
       catalog[key].new === true
-        ? '<div class="catalog__items__item__img__tags__block new">#Новинка</div><br />'
+        ? `<div class="catalog__items__item__img__tags__block new" data-idDescr=${catalog[key].dataId}>#Новинка</div><br />`
         : ''
     }` +
     `${
       catalog[key].hit === true
-        ? '<div class="catalog__items__item__img__tags__block hit">#Хит</div><br />'
+        ? `<div class="catalog__items__item__img__tags__block hit" data-idDescr=${catalog[key].dataId}>#Хит</div><br />`
         : ''
     }` +
     `${
       catalog[key].discount === true
-        ? '<div class="catalog__items__item__img__tags__block discount">' + catalog[key].discountValue + '</div><br />'
+        ? `<div class="catalog__items__item__img__tags__block discount" data-idDescr=${catalog[key].dataId}>-${catalog[key].discountValue}%</div><br />`
         : ''
     }` +
     `${
       catalog[key].specialOffer === true
-        ? '<div class="catalog__items__item__img__tags__block special-offer">' + catalog[key].specialOfferValue + '</div><br />'
+        ? `<div class="catalog__items__item__img__tags__block special-offer" data-idDescr=${catalog[key].dataId}>` + catalog[key].specialOfferValue + '</div><br />'
         : ''
-    }</div></a>`; 
+    }</div></div>`; 
     outCatalog +=
-    `<div class="catalog__items__item__content">` +
-    `<div class="catalog__items__item__content__title">${catalog[key].title}</div>`;
+    `<div class="catalog__items__item__content" data-idDescr=${catalog[key].dataId}>` +
+    `<div class="catalog__items__item__content__title" data-idDescr=${catalog[key].dataId}>${catalog[key].title}</div>`;
     outCatalog += `<button id="add-to-cart" class="catalog__items__item__content__cart" data-id=${catalog[key].dataId}>` + 
                   `<img id="add-to-cart" src="icons/shopping-cart.svg" alt="img" data-id=${catalog[key].dataId}>` +
                   `<p id="add-to-cart" class="catalog__items__item__content__cart__text" data-id=${catalog[key].dataId}>Добавить в корзину</p></button></div></div>`;
@@ -451,77 +466,6 @@ $(document).ready(function () {
       return false;
     });
   }
-
-  // slider of catigories
-  $(".catigories__slider").slick({
-    pauseOnHover: true,
-    autoplay: true,
-    autoplaySpeed: 1250,
-    slidesToShow: 5,
-    adaptiveHeight: false,
-    initialSlide: 4,
-    dots: false,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="icons/arrow-slider.svg"></button>',
-    nextArrow:
-      '<button type="button" class="slick-next"><img src="icons/arrow-slider.svg"></button>',
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 4,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 565,
-        settings: {
-          slidesToShow: 4,
-          arrows: false,
-        },
-      },
-    ],
-  });
-
-  // slider of intro
-  $(".intro__slider").slick({
-    pauseOnHover: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    adaptiveHeight: false,
-    arrows: false,
-    dots: true,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="icons/arrow-slider.svg"></button>',
-    nextArrow:
-      '<button type="button" class="slick-next"><img src="icons/arrow-slider.svg"></button>',
-  });
-
-  // slider of bestsellers
-  $(".bestsellers__slider").slick({
-    pauseOnHover: true,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    slidesToShow: 3,
-    adaptiveHeight: false,
-    arrows: true,
-    dots: false,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="icons/arrow-slider.svg"></button>',
-    nextArrow:
-      '<button type="button" class="slick-next"><img src="icons/arrow-slider.svg"></button>',
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          arrows: false,
-          dots: true,
-        },
-      },
-    ],
-  });
 
   
   // Random buyer
@@ -898,6 +842,12 @@ $(document).ready(function () {
     $(".overlay, #cart").fadeOut("slow");
   });
 
+  $("#close-modal-info").on("click", function () {
+    $("body").css({ overflow: "auto", "overflow-x": "hidden" });
+    $(".overlay, #modal-info").fadeOut("slow");
+  });
+  
+
   // Если нажать ESC закроется модальное окно
   $(document).keyup(function (e) {
     if (e.key === "Escape") {
@@ -906,14 +856,15 @@ $(document).ready(function () {
       $(".overlay, #modal-adress-forms").fadeOut("slow");
       $(".overlay, #form").fadeOut("slow");
       $(".overlay, #cart").fadeOut("slow");
+      $(".overlay, #modal-info").fadeOut("slow");
     }
   });
 
 
   // cart
   let cart = [];
+
   // Переобразуем массив "cart" в Ассоциативный массив
-  let cartAssArr = {};
   function cartAssArrFunction() {
     let cartAssArr = {};
     cart.forEach(function (e) {
@@ -931,7 +882,6 @@ $(document).ready(function () {
     };
 
     stringCartForInput  =  stringCartForInput + '<b>Общая сумма:</b> ' + commonPrice + ' UAH';
-    // console.log(stringCartForInput);
     
     let outCart = '';
     if(cart.length == 0) {
@@ -963,6 +913,7 @@ $(document).ready(function () {
     
     $('#products-counts-in-cart, #products-counts-in-cart-mobile').text(cart.length);
 
+    // меняем содержимое для div в корзине
     document.getElementById('cart-products').innerHTML = outCart;
     return;
   }
@@ -990,25 +941,6 @@ $(document).ready(function () {
     $("#modal-adress-forms").fadeIn();
   });
 
-  // function plusFunction(e) {
-  //   cart[e.count]++;
-
-  //   cartAssArrFunction();
-  // }
-
-  // function minusFunction(e) {
-  //   if(cart[e.count]-1 == 0) {
-  //     cart[e.count] = 0;
-
-  //     cartAssArrFunction();
-      
-  //     return;
-  //   }
-  //   cart[e.count]--;
-
-  //   cartAssArrFunction();
-  // }
-
   document.onclick = (el) => {
     if (el.target.hasAttribute("data-id")) {
       if (
@@ -1023,7 +955,7 @@ $(document).ready(function () {
           "icons/shopping-cart-added.svg"
         );
         $(
-          `.catalog__items__item__content__cart__text[data-id="${el.target.dataset.id}"]`
+          `.catalog__items__item__content__cart__text[data-id="${el.target.dataset.id}"], .modal-info__btn__text[data-id="${el.target.dataset.id}"]`
         ).text("Удалить с корзины");
         cartAssArrFunction();   
 
@@ -1045,7 +977,7 @@ $(document).ready(function () {
           "icons/shopping-cart.svg"
         );
         $(
-          `.catalog__items__item__content__cart__text[data-id="${el.target.dataset.id}"]`
+          `.catalog__items__item__content__cart__text[data-id="${el.target.dataset.id}"], .modal-info__btn__text[data-id="${el.target.dataset.id}"]`
         ).text("Добавить в корзину");
         cartAssArrFunction();
 
@@ -1074,8 +1006,6 @@ $(document).ready(function () {
           totalModalPrice();
           cartAssArrFunction();
       };
-      
-      // plusFunction();
     } else if (el.target.classList.contains('minus')) {
       const findIndexInChooseItems = cart.findIndex( item => item.dataId === el.target.dataset.counts);
       if (findIndexInChooseItems >= 0) {
@@ -1113,8 +1043,74 @@ $(document).ready(function () {
         `.catalog__items__item__content__cart__text[data-id="${el.target.dataset.delete}"]`
       ).text("Добавить в корзину");
       totalModalPrice();
-    };
-    
+    } else if(el.target.hasAttribute("data-idDescr")){
+      // Клик по товару
+      
+      // window.location.href = `product/id=${el.target.dataset.iddescr}`;
+
+      // Проверка по какому id кликнули
+      // console.log(el.target.dataset.iddescr); 
+      const findelFromCatalog = catalog.find( element => element.dataId === el.target.dataset.iddescr);
+
+      // location.hash = "product/title=" + findelFromCatalog.id;
+
+      let infoProductSliderPhotos = '';
+
+      for (let i = 0; i < findelFromCatalog.photos.length; i++) {
+        infoProductSliderPhotos +=  `<div><img src="img/${findelFromCatalog.photos[i]}" alt="img"></div>`;
+      };
+
+
+      document.getElementById("modal-info__content").innerHTML = `<div class="modal-info__descr-main">
+        <div class="modal-info__descr-main__images-slider">
+          <div class="info-product-slider-for">
+            ${infoProductSliderPhotos}
+          </div>
+          <div class="info-product-slider-nav">
+            ${infoProductSliderPhotos}
+          </div>
+        </div>
+        <div class="modal-info__descr-main__descr">
+          <div class="modal-info__descr-main__descr__title">${findelFromCatalog.title}</div>
+          <div class="modal-info__descr-main__descr__old-price">Цена без скидки: <span>${Math.round((findelFromCatalog.price * 100) / findelFromCatalog.discountValue)} грн.</span></div>
+          <div class="modal-info__descr-main__descr__new-price">Цена со скидкой: <span>${findelFromCatalog.price} грн.</span></div>
+          ${findelFromCatalog.link ? `<div class="modal-info__descr-main__descr__website">Сайт с подробной информацией: <a href="${findelFromCatalog.link}" target="_blank">${findelFromCatalog.link}</a></div>` : ''}
+          <div class="modal-info__descr-main__descr__descr"><u>Описание:</u> ${findelFromCatalog.descr}</div>
+
+          <button class="modal-info__btn" data-id=${findelFromCatalog.dataId}>
+            <img id="add-to-cart" src="${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? "icons/shopping-cart.svg" : "icons/shopping-cart-added.svg"}" alt="img" data-id=${findelFromCatalog.dataId}>
+            <p class="modal-info__btn__text" data-id=${findelFromCatalog.dataId}>${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? 'Добавить в корзину' : 'Удалить с корзины'}</p>
+          </button>
+        </div>
+      </div>`;
+
+
+
+      // slider for info about product
+      $('.info-product-slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.info-product-slider-nav'
+      });
+      $('.info-product-slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.info-product-slider-for',
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+      });
+
+      console.log(infoProductSliderPhotos);
+
+      $("body").css({ "overflow": "hidden"});
+      $('.overlay, #modal-info').fadeIn();
+      $('#modal-info > #close-modal-info').fadeIn();  
+    }
+
     cartAssArrFunction();
   };
 
@@ -1165,6 +1161,78 @@ $(document).ready(function () {
         $(".error.name").css({ display: "block" });
       }; 
     }
+  });
+
+  // slider of catigories
+  $(".catigories__slider").slick({
+    pauseOnHover: true,
+    autoplay: true,
+    autoplaySpeed: 1250,
+    slidesToShow: 5,
+    adaptiveHeight: false,
+    initialSlide: 4,
+    dots: false,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="icons/arrow-slider.svg"></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="icons/arrow-slider.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 565,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  // slider of intro
+  $(".intro__slider").slick({
+    pauseOnHover: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    arrows: false,
+    dots: true,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="icons/arrow-slider.svg"></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="icons/arrow-slider.svg"></button>',
+  });
+
+
+  // slider of bestsellers
+  $(".bestsellers__slider").slick({
+    pauseOnHover: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    slidesToShow: 3,
+    adaptiveHeight: false,
+    arrows: true,
+    dots: false,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="icons/arrow-slider.svg"></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="icons/arrow-slider.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
   
 });
