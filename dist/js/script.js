@@ -1,4 +1,52 @@
-let catalog = [
+const catalog = [
+  {
+    id: "set-of-weapons",
+    link: "",
+    dataCategory: "Игрушки",
+    imgWebPrew: "img/prew-set-of-weapons.webp",
+    imgJpgPrew: "img/prew-set-of-weapons.jpg",
+    descr:
+      "Игрушечный набор оружия из игры PUBG.<br><br>В наборе есть:<br><ul><li>РПГ</li><li>М24</li><li>Ножик</li><li>Магазин</li><li>Сковородка</li><li>3 стрели</li><li>3 снаряда</li><li>40 патронов</li><li>20 пулек</li></ul>",
+    photos: ['set-of-weapons/set-of-weapons-1.jpg', 'set-of-weapons/set-of-weapons-2.jpg', 'set-of-weapons/set-of-weapons-3.jpg', 'set-of-weapons/set-of-weapons-4.jpg', 'set-of-weapons/set-of-weapons-5.jpg', 'set-of-weapons/set-of-weapons-6.jpg',],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Игрушечный набор оружия из Pubg",
+    namedProduct: "Игрушечный набор оружия из Pubg",
+    dataId: "CEw4n3",
+    count: 1,
+    price: 549.0,
+    totalPrice: 249.0,
+    value: "UAH",
+  },
+  {
+    id: "talking-hamster",
+    link: "",
+    dataCategory: "Игрушки",
+    imgWebPrew: "img/prew-talking-hamster.webp",
+    imgJpgPrew: "img/prew-talking-hamster.jpg",
+    descr:
+      "ГОВОРЯЩИЙ ХОМЯК — Отличная идея для подарка детям на Рождество и Новый год. Это приносит бесконечную радость вам, вашей семье и друзьям!<br/><br/>Это весело  и  развлекаясь  ГОВОРЯЩИЙ ХОМЯК будет повторять все , что он слышит, а затем ПОВТОРЯТЬ  дерзким высоким голосом , который гарантированно подарит вам море смеха!<br/><br/>Повторяет все, что вы сказали:  функция разговора позволяет хомяку повторять все, что вы говорите, независимо от того, смеетесь ли вы, поете или говорите на каких-либо языках. Может имитировать женский и мужской голос.<br/><br/><ul><li>Имитирует как женские, так и мужские голоса.</li><li>Повторяет то, что вы говорите своим собственным голосом твари.</li><li>Ваш веселый веселый собеседник.</li></ul>",
+    photos: ['talking-hamster/hamster-1.jpg', 'talking-hamster/hamster-2.jpg', 'talking-hamster/hamster-3.jpg', 'talking-hamster/hamster-4.jpg'],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Говорящий хомячок",
+    namedProduct: "Говорящий хомячок",
+    dataId: "FV87bX",
+    count: 1,
+    price: 249.0,
+    totalPrice: 249.0,
+    value: "UAH",
+  },
   {
     id: "fairy",
     link: "https://fairy.shopping-market.space/",
@@ -382,6 +430,10 @@ let catalog = [
   // },
 ];
 
+// Global cariables
+// cart
+let cart = [];
+
 // Переобразуем массив "catalog" в Ассоциативный массив
 let catalogAssArr = {};
 function catalogAssArrFunction() {
@@ -450,6 +502,71 @@ $(".bestsellers__slider > .catalog__items__item").each(function () {
 });
   
 $(document).ready(function () {
+  // проверяем какой урл и высвечиваем модульное окно
+  if(location.hash.includes('#product/title=') || location.hash.includes('product/title=')) {
+    const stringUrlArr = location.hash.split('=');
+    const findelFromCatalog = catalog.find(e => e.id === stringUrlArr[1]);
+    console.log(findelFromCatalog);
+
+
+    location.hash = "product/title=" + findelFromCatalog.id;
+
+    let infoProductSliderPhotos = '';
+
+    for (let i = 0; i < findelFromCatalog.photos.length; i++) {
+      infoProductSliderPhotos +=  `<div><img src="img/${findelFromCatalog.photos[i]}" alt="img"></div>`;
+    };
+
+
+    document.getElementById("modal-info__content").innerHTML = `<div class="modal-info__descr-main">
+      <div class="modal-info__descr-main__images-slider">
+        <div class="info-product-slider-for">
+          ${infoProductSliderPhotos}
+        </div>
+        <div class="info-product-slider-nav">
+          ${infoProductSliderPhotos}
+        </div>
+      </div>
+      <div class="modal-info__descr-main__descr">
+        <div class="modal-info__descr-main__descr__title">${findelFromCatalog.title}</div>
+        <div class="modal-info__descr-main__descr__old-price">Цена без скидки: <span>${Math.round((findelFromCatalog.price * 100) / findelFromCatalog.discountValue)} грн.</span></div>
+        <div class="modal-info__descr-main__descr__new-price">Цена со скидкой: <span>${findelFromCatalog.price} грн.</span></div>
+        ${findelFromCatalog.link ? `<div class="modal-info__descr-main__descr__website">Сайт с подробной информацией: <a href="${findelFromCatalog.link}" target="_blank">${findelFromCatalog.link}</a></div>` : ''}
+        <div class="modal-info__descr-main__descr__descr"><u>Описание:</u> ${findelFromCatalog.descr}</div>
+
+        <button class="modal-info__btn" data-id=${findelFromCatalog.dataId}>
+          <img id="add-to-cart" src="${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? "icons/shopping-cart.svg" : "icons/shopping-cart-added.svg"}" alt="img" data-id=${findelFromCatalog.dataId}>
+          <p class="modal-info__btn__text" data-id=${findelFromCatalog.dataId}>${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? 'Добавить в корзину' : 'Удалить с корзины'}</p>
+        </button>
+      </div>
+    </div>`;
+
+    // slider for info about product
+    $('.info-product-slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.info-product-slider-nav'
+    });
+    $('.info-product-slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.info-product-slider-for',
+      arrows: false,
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true
+    });
+
+    console.log(infoProductSliderPhotos);
+
+    $("body").css({ "overflow": "hidden"});
+    $('.overlay, #modal-info').fadeIn();
+    $('#modal-info > #close-modal-info').fadeIn(); 
+  }
+
+
   /*smooth scroll */
   if (window.matchMedia("(max-width: 565px)").matches) {
     $("a[href^='#']").click(function () {
@@ -824,27 +941,31 @@ $(document).ready(function () {
   $("#close-form").on("click", function () {
     $("body").css({ overflow: "auto", "overflow-x": "hidden" });
     $(".overlay, #form").fadeOut("slow");
-    console.log(1);
+    location.hash = "";
   });
 
   $("#close-adress-form").on("click", function () {
     $("body").css({ overflow: "auto", "overflow-x": "hidden" });
     $(".overlay, #modal-adress-forms").fadeOut("slow");
+    location.hash = "";
   });
 
   $("#close-thanks").on("click", function () {
     $("body").css({ overflow: "auto", "overflow-x": "hidden" });
     $(".overlay, #thanks").fadeOut("slow");
+    location.hash = "";
   });
 
   $("#close-cart").on("click", function () {
     $("body").css({ overflow: "auto", "overflow-x": "hidden" });
     $(".overlay, #cart").fadeOut("slow");
+    location.hash = "";
   });
 
   $("#close-modal-info").on("click", function () {
     $("body").css({ overflow: "auto", "overflow-x": "hidden" });
     $(".overlay, #modal-info").fadeOut("slow");
+    location.hash = "";
   });
   
 
@@ -858,13 +979,12 @@ $(document).ready(function () {
       $(".overlay, #cart").fadeOut("slow");
       $(".overlay, #modal-info").fadeOut("slow");
     }
+
+    location.hash = "";
   });
 
 
-  // cart
-  let cart = [];
-
-  // Переобразуем массив "cart" в Ассоциативный массив
+  // Переобразуем массив "cart" (который в верху) в Ассоциативный массив
   function cartAssArrFunction() {
     let cartAssArr = {};
     cart.forEach(function (e) {
@@ -1050,10 +1170,12 @@ $(document).ready(function () {
 
       // Проверка по какому id кликнули
       // console.log(el.target.dataset.iddescr); 
+      
+
       const findelFromCatalog = catalog.find( element => element.dataId === el.target.dataset.iddescr);
 
-      // location.hash = "product/title=" + findelFromCatalog.id;
-
+      location.hash = "product/title=" + findelFromCatalog.id;
+      
       let infoProductSliderPhotos = '';
 
       for (let i = 0; i < findelFromCatalog.photos.length; i++) {

@@ -37,11 +37,7 @@
     position: fixed;
     top: 10px;
 
-<<<<<<< HEAD
-    @media (max-width: $mobile-sm) {
-=======
     @media (max-width: $mobile) {
->>>>>>> product-modul-window
       right: 10px;
     }
   }
@@ -269,14 +265,9 @@
         font-weight: 700;
         padding: 0;
 
-<<<<<<< HEAD
-      @media (max-width: $mobile) {
-        width: 100%;
-=======
         @media (max-width: $mobile-sm) {
           font-size: .9rem;
         }
->>>>>>> product-modul-window
       }
     }
   }
