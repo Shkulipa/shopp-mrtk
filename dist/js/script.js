@@ -20,7 +20,7 @@ const catalog = [
     dataId: "CEw4n3",
     count: 1,
     price: 549.0,
-    totalPrice: 249.0,
+    totalPrice: 549.0,
     value: "UAH",
   },
   {
