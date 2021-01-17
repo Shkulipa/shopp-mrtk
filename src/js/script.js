@@ -506,13 +506,10 @@ $(document).ready(function () {
   if(location.hash.includes('#product/title=') || location.hash.includes('product/title=')) {
     const stringUrlArr = location.hash.split('=');
     const findelFromCatalog = catalog.find(e => e.id === stringUrlArr[1]);
-    console.log(findelFromCatalog);
-
 
     location.hash = "product/title=" + findelFromCatalog.id;
 
     let infoProductSliderPhotos = '';
-
     for (let i = 0; i < findelFromCatalog.photos.length; i++) {
       infoProductSliderPhotos +=  `<div><img src="img/${findelFromCatalog.photos[i]}" alt="img"></div>`;
     };
@@ -535,8 +532,8 @@ $(document).ready(function () {
         <div class="modal-info__descr-main__descr__descr"><u>Описание:</u> ${findelFromCatalog.descr}</div>
 
         <button class="modal-info__btn" data-id=${findelFromCatalog.dataId}>
-          <img id="add-to-cart" src="${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? "icons/shopping-cart.svg" : "icons/shopping-cart-added.svg"}" alt="img" data-id=${findelFromCatalog.dataId}>
-          <p class="modal-info__btn__text" data-id=${findelFromCatalog.dataId}>${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? 'Добавить в корзину' : 'Удалить с корзины'}</p>
+          <img id="add-to-cart" src="${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) > -1 ? "icons/shopping-cart-added.svg" : "icons/shopping-cart.svg"}" alt="img" data-id=${findelFromCatalog.dataId}>
+          <p class="modal-info__btn__text" data-id=${findelFromCatalog.dataId}>${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) > -1 ? 'Удалить с корзины' : 'Добавить в корзину'}</p>
         </button>
       </div>
     </div>`;
@@ -558,8 +555,6 @@ $(document).ready(function () {
       centerMode: true,
       focusOnSelect: true
     });
-
-    console.log(infoProductSliderPhotos);
 
     $("body").css({ "overflow": "hidden"});
     $('.overlay, #modal-info').fadeIn();
@@ -1182,7 +1177,6 @@ $(document).ready(function () {
         infoProductSliderPhotos +=  `<div><img src="img/${findelFromCatalog.photos[i]}" alt="img"></div>`;
       };
 
-
       document.getElementById("modal-info__content").innerHTML = `<div class="modal-info__descr-main">
         <div class="modal-info__descr-main__images-slider">
           <div class="info-product-slider-for">
@@ -1200,8 +1194,8 @@ $(document).ready(function () {
           <div class="modal-info__descr-main__descr__descr"><u>Описание:</u> ${findelFromCatalog.descr}</div>
 
           <button class="modal-info__btn" data-id=${findelFromCatalog.dataId}>
-            <img id="add-to-cart" src="${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? "icons/shopping-cart.svg" : "icons/shopping-cart-added.svg"}" alt="img" data-id=${findelFromCatalog.dataId}>
-            <p class="modal-info__btn__text" data-id=${findelFromCatalog.dataId}>${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) ? 'Добавить в корзину' : 'Удалить с корзины'}</p>
+            <img id="add-to-cart" src="${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) > -1 ? "icons/shopping-cart-added.svg" : "icons/shopping-cart.svg"}" alt="img" data-id=${findelFromCatalog.dataId}>
+            <p class="modal-info__btn__text" data-id=${findelFromCatalog.dataId}>${cart.findIndex(e => findelFromCatalog.dataId === e.dataId) > -1 ? 'Удалить с корзины' : 'Добавить в корзину'}</p>
           </button>
         </div>
       </div>`;
@@ -1225,8 +1219,6 @@ $(document).ready(function () {
         centerMode: true,
         focusOnSelect: true
       });
-
-      console.log(infoProductSliderPhotos);
 
       $("body").css({ "overflow": "hidden"});
       $('.overlay, #modal-info').fadeIn();
