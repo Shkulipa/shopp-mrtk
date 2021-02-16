@@ -23,5 +23,7 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "del": "^6.0.0"
+  }
 }

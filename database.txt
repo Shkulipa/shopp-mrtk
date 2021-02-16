@@ -1,0 +1,4 @@
+Хост (сервер):	localhost
+Имя пользователя:	multis_shopp-market
+Пароль:	ByTdA35u
+База данных:	multis_shopp-market
