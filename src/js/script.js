@@ -1,13 +1,13 @@
 const catalog = [
   {
-    id: "set-of-weapons",
-    link: "",
-    dataCategory: "Игрушки",
-    imgWebPrew: "img/prew-set-of-weapons.webp",
-    imgJpgPrew: "img/prew-set-of-weapons.jpg",
+    id: "headphones",
+    link: "", //если есть одностраничный сайт
+    dataCategory: "Гаджеты",
+    imgWebPrew: false,
+    imgJpgPrew: "img/headphones/prev-headphones.jpg",
     descr:
-      "Игрушечный набор оружия из игры PUBG.<br><br>В наборе есть:<br><ul><li>РПГ</li><li>М24</li><li>Ножик</li><li>Магазин</li><li>Сковородка</li><li>3 стрели</li><li>3 снаряда</li><li>40 патронов</li><li>20 пулек</li></ul>",
-    photos: ['set-of-weapons/set-of-weapons-1.jpg', 'set-of-weapons/set-of-weapons-2.jpg', 'set-of-weapons/set-of-weapons-3.jpg', 'set-of-weapons/set-of-weapons-4.jpg', 'set-of-weapons/set-of-weapons-5.jpg', 'set-of-weapons/set-of-weapons-6.jpg',],  
+      "Беспроводные наушники A6S<br><br>Наушники надежно держаться в ушах и даже во время бега, быстрой ходьбе или других занятий спортом они не выпадут, так как разработаны с учетом анатомии уха.<br><br>Благодаря функции шумоподавления, звук ясный и чистый.<br><br>Динамики с сильным басом приведут в восторг любого меломана. Эта модель наушников необычайно портативна. Её размеры всего 1,5 см х 2,7 см.<br><br>Зарядный бокс имеет размеры 6,2 см х 2,75 см.<br><br><ul><li>Имя устройства: A6S</li><li>Версия Bluetooth: 5.0</li><li>Чип Bluetooth: Jieli 6916A4</li><li>Водонепроницаемость IPX4</li><li>Размер драйвера: 8 мм</li><li>Время разговора: 2 часа</li><li>Время воспроизведения музыки: 8 часов</li><li>Время ожидания: 120 часов</li><li>Время зарядки: около 1 час</li><li>Емкость аккумулятора Charing: 280mA</li><li>Емкость батареи одного наушника: 45mA</li><li>Интерфейс зарядки: Micro USB</li><li>Вес одного наушника: 3.9g</li><li>Радиус действия: 10 метров</li></ul>",
+    photos: ['headphones/headphones.jpg', 'headphones/headphones-1.jpg', 'headphones/headphones-2.jpg', 'headphones/headphones-3.jpg', 'headphones/headphones-5.jpg', 'headphones/headphones-6.jpg',],  
     sale: true,
     new: true,
     hit: true,
@@ -15,23 +15,23 @@ const catalog = [
     discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
-    title: "Игрушечный набор оружия из Pubg",
-    namedProduct: "Игрушечный набор оружия из Pubg",
-    dataId: "CEw4n3",
+    title: "Беспроводные Наушники",
+    namedProduct: "Беспроводные Наушники",
+    dataId: "nx9p4u",
     count: 1,
-    price: 549.0,
-    totalPrice: 549.0,
+    price: 349.0,
+    totalPrice: 349.0,
     value: "UAH",
   },
   {
-    id: "talking-hamster",
-    link: "",
+    id: "3d-pen",
+    link: "", //если есть одностраничный сайт
     dataCategory: "Игрушки",
-    imgWebPrew: "img/prew-talking-hamster.webp",
-    imgJpgPrew: "img/prew-talking-hamster.jpg",
+    imgWebPrew: false,
+    imgJpgPrew: "img/3d-pen/prev-3d-pen.jpg",
     descr:
-      "ГОВОРЯЩИЙ ХОМЯК — Отличная идея для подарка детям на Рождество и Новый год. Это приносит бесконечную радость вам, вашей семье и друзьям!<br/><br/>Это весело  и  развлекаясь  ГОВОРЯЩИЙ ХОМЯК будет повторять все , что он слышит, а затем ПОВТОРЯТЬ  дерзким высоким голосом , который гарантированно подарит вам море смеха!<br/><br/>Повторяет все, что вы сказали:  функция разговора позволяет хомяку повторять все, что вы говорите, независимо от того, смеетесь ли вы, поете или говорите на каких-либо языках. Может имитировать женский и мужской голос.<br/><br/><ul><li>Имитирует как женские, так и мужские голоса.</li><li>Повторяет то, что вы говорите своим собственным голосом твари.</li><li>Ваш веселый веселый собеседник.</li></ul>",
-    photos: ['talking-hamster/hamster-1.jpg', 'talking-hamster/hamster-2.jpg', 'talking-hamster/hamster-3.jpg', 'talking-hamster/hamster-4.jpg'],  
+      "3д ручка (триде ручка) — необычное устройство письма, с помощью которого можно делать реалистичные трёхмерные, а так же двухмерные рисунки. Только представьте, что рисовать можно не по листу, а от листа – вверх! Сложно? Еще бы, ведь даже наше воображение не готово свыкнуться с такой смелой мыслью… но трехмерная ручка сломает любые стереотипы и окончательно изменит Ваше отношение к, казалось бы, привычным вещам!<br><br><b>Как же работает 3D Pen?</b> Вы вставляете сверху в ручку нить пластика, нажимаете кнопку рисования, и моторчик ее протягивает вниз в нагревательный носик, из которого расплавленный пластик и выходит наружу. И за 1-3 секунду застывает. Таким образом, можно рисовать конструкции абсолютно любых форм и размеров. Вам не потребуется подключение к компьютеру или какие-либо специальные навыки, достаточно немного фантазии!<br><br><b>Какими чернилами рисует 3D Pen?</b> Ручка рисует аналогичным пластиком, как и 3Д принтеры — ABS, а так же PLA. Пластик продается отдельно в виде нити (d=1,75 мм), и бывает более чем 50 разных цветов, в том числе и решения, светящиеся в темноте. Материал не имеет в своем составе вредных химических и фосфорирующих компонентов, а светится за счет безопасного люминофора, который «заряжается» от обычного света в помещении и «отдает» накопленный свет в течение 6-12 часов. В комплекте к каждой ручке поставляется три разных цвета.<br><br><b>На чем можно рисовать?</b> Подходит для использования на любой поверхности, главное предварительно защитить ее, чтобы она не испортилась от горячего носика ручки. Для этого будет достаточно положить несколько слоев бумаги, или просто журнал.<br><br><b>Комплектация:</b> <ul><li>оригинальная 3D Ручка</li><li>адаптер питания</li><li>сетевой переходник для адаптера питания;</li><li>комплект пластика</li><li>инструкция</li><li>подставка под ручку</li></ul><b>Комплектация:</b> <ul><li>LCD дисплей</li><li>непрерывная подача пластика</li><li>возможность регулировать температуру</li><li>возможность менять скорость подачи пластика</li><li>может рисовать ABS и PLA</li><li>быстрая подготовка к работе</li></ul>",
+    photos: ['3d-pen/3d-pen-1.jpg', '3d-pen/3d-pen-2.jpg', '3d-pen/3d-pen-3.jpg', '3d-pen/3d-pen-4.jpg', '3d-pen/3d-pen-5.jpg', '3d-pen/3d-pen-6.jpg',],  
     sale: true,
     new: true,
     hit: true,
@@ -39,23 +39,23 @@ const catalog = [
     discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
-    title: "Говорящий хомячок",
-    namedProduct: "Говорящий хомячок",
-    dataId: "FV87bX",
+    title: "3D ручка",
+    namedProduct: "3D ручка",
+    dataId: "u6s2cx",
     count: 1,
-    price: 249.0,
-    totalPrice: 249.0,
+    price: 379.0,
+    totalPrice: 379.0,
     value: "UAH",
   },
   {
-    id: "fairy",
-    link: "https://fairy.shopping-market.space/",
+    id: "art-set",
+    link: "", //если есть одностраничный сайт
     dataCategory: "Игрушки",
-    imgWebPrew: "img/prew-fairy.webp",
-    imgJpgPrew: "img/prew-fairy.jpg",
+    imgWebPrew: false,
+    imgJpgPrew: "img/art-set/prev-art-set.jpg",
     descr:
-      "Летающие Феи – отличный подарок для маленькой мечтательницы. Кукла, словно по волшебству, взмывает в небо, открывая простор детской фантазии. Она держит дистанцию от любой поверхности (от пола, ладони). Волшебная фея имеет встроенный моторчик и цветные пропеллеры, которые являются частью наряда сказочного персонажа. А еще – сенсорные датчики, которые контролируют наличие вблизи предметов и держат полет игрушки на определенном расстоянии от них. Управлять же ею можно, поднеся снизу ладошку: датчик сработает на наличие предметаи куколка поднимется выше. Выше ладошка – выше полет, опуская же ладонь можно уменьшать и высоту полета волшебной феи.Никакого радиоуправления, сложных приспособлений или дополнительных условий — только ловкость и быстрота движенийпомогут фее оставаться в воздухе. Закажите фею Flying Fairy прямо сейчас и порадуйсте свою маленькую мечтательницу!Преимущества: Волшебный полет - Единственная фея в мире,которая действительно летает. Благодаря уникальной технологии,Фея держитдистанцию от любых поверхностей, и дети могут легко управлять Феей своимиладошками; Красивая упаковка - феяпродаётся в красивомдомике-коробке, что избавит мам, пап, бабушек и дедушек от поиска подарочнойупаковки и сразупривлечёт внимание ребёнка; Сказочный дизайн - мир сказочных героевстановится ближе с этими красавицами. Яркиекостюмы, полупрозрачные крылья, атакже профессиональное исполнение всех частей тела, черт лица,обеспечиваютмаксимальную реалистичность игры; Характеристики: Время полета: 6-8 минут; Время зарядки : 25-30 минут;Высота куклы: 18 см; Материал: мягкий, ударопрочный пластик; в комплекте(кукла - 1 шт USB-зарядное устройство - 1 штзапасные лопасти - 1 шт); Вес: 340 г",
-    photos: ['product-fairy/fairy-1.jpg', 'product-fairy/fairy-2.jpg', 'product-fairy/fairy-3.jpg', 'product-fairy/fairy-4.jpg'],  
+      "<b>Огромный набор для творчества</b> восхищенно примет каждый ребенок. По секрету говоря, даже взрослые обрадовались бы такому разнообразию материалов, если бы статус позволял. В набор входит все необходимое для рисования, и даже немного больше.<br><br>Карандаши, мелки, фломастеры, краски… А еще скрепки, степлер, точилки, ножнички и многое другое! Казалось бы, что еще нужно для полного счастья? Правильно – удобный чемоданчик для хранения. Отличный повод научит маленького художника прибирать за собой после игр. И, конечно, с таким разнообразием материала ребенок будет развиваться быстро и с интересом.<br><br>Всего в набор входит <b>150 разных предметов</b>, продается он в подарочной упаковке. Хотите увидеть самую искреннюю из всех детских улыбок? Подарите ему огромный набор для творчества. Кстати, вы тоже сможете пользоваться им, пока никто не видит! <br><br>Комплект:<br><ol><li>Маркеры - 36 шт</li><li>Восковые карандаши - 24 шт.</li><li>Масляная пастель - 24 шт.</li><li>Цветные карандаши - 24 шт.</li><li>Набор скрепок</li><li>Акварель - 12 шт.</li><li>Кисточка</li><li>Палитра</li><li>Мини степлер</li><li>Ножницы</li><li>Точилка</li><li>Белая краска</li><li>Клей</li><li>Линейка</li><li>Ластик</li><li>Карандаш</li><li>Папка-кейс</li></ol>",
+    photos: ['art-set/art-set-1.jpg', 'art-set/art-set-2.jpg', 'art-set/art-set-3.jpg', 'art-set/art-set-4.jpg', 'art-set/art-set-5.jpg', 'art-set/art-set-6.jpg', 'art-set/art-set-7.jpg'],  
     sale: true,
     new: true,
     hit: true,
@@ -63,12 +63,12 @@ const catalog = [
     discountValue: 53,
     specialOffer: false,
     specialOfferValue: "1 + 1 = 3",
-    title: "Летающая фея",
-    namedProduct: "Летающая фея",
-    dataId: "5kT4Ta",
+    title: "Огромный набор для творчества",
+    namedProduct: "Огромный набор для творчества",
+    dataId: "rjx9z6",
     count: 1,
-    price: 249.0,
-    totalPrice: 249.0,
+    price: 322.0,
+    totalPrice: 322.0,
     value: "UAH",
   },
   {
@@ -120,6 +120,126 @@ const catalog = [
     value: "UAH",
   },
   {
+    id: "magic-back",
+    link: "", //если есть одностраничный сайт
+    dataCategory: "Товары-для-спорта-здоровья-и-красоты",
+    imgWebPrew: false,
+    imgJpgPrew: "img/magic-back/prev-back-magic.jpg",
+    descr:
+      "Тренажер для спины будет всегда заботиться о вас. Он разработан таким образом, чтобы осуществлять безопасную и легкую растяжку позвоночника, совмещая с массажем спинных мышц. Имеет 3 уровня фиксации, которые подбираются исходя из ваших индивидуальных способностей, возможностей и предпочтений. Неподготовленному человеку, у которого имеются те или иные проблемы со спиной и поясницей рекомендуется начинать использование с первого, самого щадящего уровня. Это простой и пассивный способ, который позволит мягко растянуть всю спину, помогая устранить источник боли в спине и восстановить естественную кривизну позвоночного столба. Далее, по мере использования, вы почувствуете, что сможете использовать и другие уровни....<br><br>Характеристики:<br><ul><li>Тип массажера: массажная подставка</li><li>Цвет: черный</li><li>Вес: 0.6 кг</li><li>Область приминения: для спины и поясницы</li><li>Комплектация: Жесткая база - 1 шт., гибкая опорная-планка с массажными элементами для спины - 1шт.</li></ul>",
+    photos: ['magic-back/magic-back-1.jpeg', 'magic-back/magic-back-2.jpeg', 'magic-back/magic-back-3.jpeg', 'magic-back/magic-back-4.jpeg'],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Массажер для спины Magic Back",
+    namedProduct: "Массажер для спины Magic Back",
+    dataId: "d8eKgg",
+    count: 1,
+    price: 249.0,
+    totalPrice: 249.0,
+    value: "UAH",
+  },
+  {
+    id: "talking-hamster",
+    link: "",
+    dataCategory: "Игрушки",
+    imgWebPrew: "img/prew-talking-hamster.webp",
+    imgJpgPrew: "img/prew-talking-hamster.jpg",
+    descr:
+      "ГОВОРЯЩИЙ ХОМЯК — Отличная идея для подарка детям на Рождество и Новый год. Это приносит бесконечную радость вам, вашей семье и друзьям!<br/><br/>Это весело  и  развлекаясь  ГОВОРЯЩИЙ ХОМЯК будет повторять все , что он слышит, а затем ПОВТОРЯТЬ  дерзким высоким голосом , который гарантированно подарит вам море смеха!<br/><br/>Повторяет все, что вы сказали:  функция разговора позволяет хомяку повторять все, что вы говорите, независимо от того, смеетесь ли вы, поете или говорите на каких-либо языках. Может имитировать женский и мужской голос.<br/><br/><ul><li>Имитирует как женские, так и мужские голоса.</li><li>Повторяет то, что вы говорите своим собственным голосом твари.</li><li>Ваш веселый веселый собеседник.</li></ul>",
+    photos: ['talking-hamster/hamster-1.jpg', 'talking-hamster/hamster-2.jpg', 'talking-hamster/hamster-3.jpg', 'talking-hamster/hamster-4.jpg'],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Говорящий хомячок",
+    namedProduct: "Говорящий хомячок",
+    dataId: "FV87bX",
+    count: 1,
+    price: 249.0,
+    totalPrice: 249.0,
+    value: "UAH",
+  },
+  {
+    id: "fairy",
+    link: "https://fairy.shopping-market.space/",
+    dataCategory: "Игрушки",
+    imgWebPrew: "img/prew-fairy.webp",
+    imgJpgPrew: "img/prew-fairy.jpg",
+    descr:
+      "Летающие Феи – отличный подарок для маленькой мечтательницы. Кукла, словно по волшебству, взмывает в небо, открывая простор детской фантазии. Она держит дистанцию от любой поверхности (от пола, ладони). Волшебная фея имеет встроенный моторчик и цветные пропеллеры, которые являются частью наряда сказочного персонажа. А еще – сенсорные датчики, которые контролируют наличие вблизи предметов и держат полет игрушки на определенном расстоянии от них. Управлять же ею можно, поднеся снизу ладошку: датчик сработает на наличие предметаи куколка поднимется выше. Выше ладошка – выше полет, опуская же ладонь можно уменьшать и высоту полета волшебной феи.Никакого радиоуправления, сложных приспособлений или дополнительных условий — только ловкость и быстрота движенийпомогут фее оставаться в воздухе. Закажите фею Flying Fairy прямо сейчас и порадуйсте свою маленькую мечтательницу!Преимущества: Волшебный полет - Единственная фея в мире,которая действительно летает. Благодаря уникальной технологии,Фея держитдистанцию от любых поверхностей, и дети могут легко управлять Феей своимиладошками; Красивая упаковка - феяпродаётся в красивомдомике-коробке, что избавит мам, пап, бабушек и дедушек от поиска подарочнойупаковки и сразупривлечёт внимание ребёнка; Сказочный дизайн - мир сказочных героевстановится ближе с этими красавицами. Яркиекостюмы, полупрозрачные крылья, атакже профессиональное исполнение всех частей тела, черт лица,обеспечиваютмаксимальную реалистичность игры; Характеристики: Время полета: 6-8 минут; Время зарядки : 25-30 минут;Высота куклы: 18 см; Материал: мягкий, ударопрочный пластик; в комплекте(кукла - 1 шт USB-зарядное устройство - 1 штзапасные лопасти - 1 шт); Вес: 340 г",
+    photos: ['product-fairy/fairy-1.jpg', 'product-fairy/fairy-2.jpg', 'product-fairy/fairy-3.jpg', 'product-fairy/fairy-4.jpg'],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Летающая фея",
+    namedProduct: "Летающая фея",
+    dataId: "5kT4Ta",
+    count: 1,
+    price: 249.0,
+    totalPrice: 249.0,
+    value: "UAH",
+  },
+  {
+    id: "nakolennik",
+    link: "", //если есть одностраничный сайт
+    dataCategory: "Товары-для-спорта-здоровья-и-красоты",
+    imgWebPrew: false,
+    imgJpgPrew: "img/nakolennik/prev-nakolennik.jpg",
+    descr:
+      "Спортивный наколенник KNEE SUPPORT предназначен для защиты коленного сустава от травм и растяжений во время занятий спортом или активного отдыха.<br><br>Фиксатор для колена оказывает умеренную фиксацию и стабилизацию коленного сустава, что уменьшает риск его травмирования во время активных движений или больших нагрузок. Эластичный материал, из которого изготовлен компрессионный наколенник, прекрасно пропускает воздух, позволяет коже «дышать» и чувствовать себя комфортно.<br><br>Размер в наличии: XL (45-50 см).<br><br>Характеристики:<ul><li>Материал: нейлон, спандекс</li><li>Размеры (в нерастянутом виде): 20х27х0,5 см</li><li>Цвет: серый с зеленым</li><li>Вес: 100 г.</li></ul>",
+    photos: ['nakolennik/nakolennik-1.png', 'nakolennik/nakolennik-2.jpg', 'nakolennik/nakolennik-3.jpg',],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Бандаж для коленного сустава",
+    namedProduct: "Бандаж для коленного сустава",
+    dataId: "4k4gjs",
+    count: 1,
+    price: 199.0,
+    totalPrice: 199.0,
+    value: "UAH",
+  },
+  {
+    id: "shalash",
+    link: "", //если есть одностраничный сайт
+    dataCategory: "Игрушки",
+    imgWebPrew: false,
+    imgJpgPrew: "img/shalash/prev-shalash.jpg",
+    descr:
+      "Настоящий игровой шатер, в котором дети могут почувствовать себя настоящими принцами и принцессами. Яркие и просторные игровые палатки в виде маленького замка станут любимым местом для игр вашего ребенка, ведь он сможет брать его с собой.<br><br>Размеры:<br><br>- диаметр - 105 см<br><br>- высота - 135 см<br><br><br><br>Возможно это благодаря материалам высокого качества, из которых изготовлена представленная игровая палатка. Материал устойчив к воздействию влаги и ультрафиолетовых лучей, а значит палатку можно устанавливать не только дома, но и на улице, к примеру, в саду или при выезде на пикник.<br><br>Вход в палатку закрывается с помощью липучек, а по бокам расположены окна с мелкой сеткой. Собирать и разбирать палатку очень легко и весь процесс занимает минимум времени.",
+    photos: ['shalash/shalash-1.jpg', 'shalash/shalash-2.jpg', 'shalash/shalash-3.jpg', 'shalash/shalash-4.jpg', 'shalash/shalash-5.jpg'],  
+    sale: true,
+    new: true,
+    hit: true,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Детская палатка",
+    namedProduct: "Детская палатка",
+    dataId: "q9rrd5",
+    count: 1,
+    price: 449.0,
+    totalPrice: 449.0,
+    value: "UAH",
+  },
+  {
     id: "magic-track",
     link: "https://magic-tracks.shopping-market.space",
     dataCategory: "Игрушки",
@@ -167,7 +287,30 @@ const catalog = [
     totalPrice: 199.0,
     value: "UAH",
   },
-
+  {
+    id: "set-of-weapons",
+    link: "",
+    dataCategory: "Игрушки",
+    imgWebPrew: "img/prew-set-of-weapons.webp",
+    imgJpgPrew: "img/prew-set-of-weapons.jpg",
+    descr:
+      "Игрушечный набор оружия из игры PUBG.<br><br>В наборе есть:<br><ul><li>РПГ</li><li>М24</li><li>Ножик</li><li>Магазин</li><li>Сковородка</li><li>3 стрели</li><li>3 снаряда</li><li>40 патронов</li><li>20 пулек</li></ul>",
+    photos: ['set-of-weapons/set-of-weapons-1.jpg', 'set-of-weapons/set-of-weapons-2.jpg', 'set-of-weapons/set-of-weapons-3.jpg', 'set-of-weapons/set-of-weapons-4.jpg', 'set-of-weapons/set-of-weapons-5.jpg', 'set-of-weapons/set-of-weapons-6.jpg',],  
+    sale: true,
+    new: false,
+    hit: false,
+    discount: true,
+    discountValue: 53,
+    specialOffer: false,
+    specialOfferValue: "1 + 1 = 3",
+    title: "Игрушечный набор оружия из Pubg",
+    namedProduct: "Игрушечный набор оружия из Pubg",
+    dataId: "CEw4n3",
+    count: 1,
+    price: 549.0,
+    totalPrice: 549.0,
+    value: "UAH",
+  },
   // {
   //   id: "clothes-shaver",
   //   link: "https://clothes-shaver.shopping-market.space",
@@ -450,10 +593,7 @@ for(let key in catalog) {
   outCatalog += `<div  class="catalog__items__item" target="_blank" data-category=${catalog[key].dataCategory} data-idDescr=${catalog[key].dataId}>`;
   outCatalog += `<div target="_blank" class="catalog__items__item__img" data-idDescr=${catalog[key].dataId}>`;
   outCatalog +=
-    `<picture>
-      <source srcset="${catalog[key].imgWebPrew}" type="image/webp" data-idDescr=${catalog[key].dataId}>
-      <img src="${catalog[key].imgJpgPrew}" alt="img" data-idDescr=${catalog[key].dataId}>
-    </picture>`;
+    `<img src="${catalog[key].imgJpgPrew}" alt="img" data-idDescr=${catalog[key].dataId}>`;
   outCatalog +=
     `<div class="catalog__items__item__img__tags" data-idDescr=${catalog[key].dataId}>` +
     `${
@@ -756,13 +896,13 @@ $(document).ready(function () {
   }
 
   // Время через сколько высветится впервые
-  let delay = Math.round(Math.random() * 4 + 4) * 1000;
+  let delay = Math.round(Math.random() * 5 + 5) * 1000;
   // let delay = 500;
   function runBuyers() {
     fadeItem();
 
     // Время через сколько высветится следующая
-    delay = Math.round(Math.random() * 30 + 10) * 1000;
+    delay = Math.round(Math.random() * 60 + 30) * 1000;
     setTimeout(() => {
       runBuyers();
     }, delay);
@@ -957,10 +1097,20 @@ $(document).ready(function () {
     location.hash = "";
   });
 
+  // отслеживание скрола
+  window.addEventListener('scroll', function() {
+    let pageYOffset = window.pageYOffset;
+    window.localStorage.setItem('scroll', pageYOffset);
+  });
+
   $("#close-modal-info").on("click", function () {
     $("body").css({ overflow: "auto", "overflow-x": "hidden" });
     $(".overlay, #modal-info").fadeOut("slow");
+
     location.hash = "";
+
+    let getScroll = window.localStorage.getItem('scroll');
+    window.scroll(0, getScroll);
   });
   
 
@@ -1237,7 +1387,7 @@ $(document).ready(function () {
     ) {
       $.ajax({
         type: "POST",
-        url: "php/request-cart.php",
+        url: "php/telegram.php",
         data: $(this).serialize(),
       }).done(function () {
         $(".error.name").css({ display: "none" });
@@ -1282,7 +1432,7 @@ $(document).ready(function () {
     pauseOnHover: true,
     autoplay: true,
     autoplaySpeed: 1250,
-    slidesToShow: 5,
+    slidesToShow: 4,
     adaptiveHeight: false,
     initialSlide: 4,
     dots: false,
