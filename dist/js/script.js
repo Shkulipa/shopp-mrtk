@@ -982,7 +982,7 @@ $(document).ready(function () {
   toogleBurger("nav-link-2");
   toogleBurger("nav-link-3");
 
-  // SendMessage Consultation
+  // SendMessage Order
   $("#order-form").submit(function (e) {
     e.preventDefault();
     if (
@@ -992,7 +992,7 @@ $(document).ready(function () {
     ) {
       $.ajax({
         type: "POST",
-        url: "php/telegram.php",
+        url: "php/request-cart.php",
         data: $(this).serialize(),
       }).done(function () {
         //  очищение формы
@@ -1378,7 +1378,7 @@ $(document).ready(function () {
     cartAssArrFunction();
   };
 
-  // SendMessage
+  // SendMessage Consultation
   $("#adress-form").submit(function (e) {
     e.preventDefault();
     if (
