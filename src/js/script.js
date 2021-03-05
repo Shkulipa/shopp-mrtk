@@ -982,7 +982,7 @@ $(document).ready(function () {
   toogleBurger("nav-link-2");
   toogleBurger("nav-link-3");
 
-  // SendMessage Order
+  // SendMessage Consultation
   $("#order-form").submit(function (e) {
     e.preventDefault();
     if (
@@ -992,7 +992,7 @@ $(document).ready(function () {
     ) {
       $.ajax({
         type: "POST",
-        url: "php/request-cart.php",
+        url: "php/telegram.php",
         data: $(this).serialize(),
       }).done(function () {
         //  очищение формы
@@ -1377,8 +1377,8 @@ $(document).ready(function () {
 
     cartAssArrFunction();
   };
-
-  // SendMessage Consultation
+  
+  // SendMessage Order
   $("#adress-form").submit(function (e) {
     e.preventDefault();
     if (
@@ -1387,7 +1387,7 @@ $(document).ready(function () {
     ) {
       $.ajax({
         type: "POST",
-        url: "php/telegram.php",
+        url: "php/request-cart.php",
         data: $(this).serialize(),
       }).done(function () {
         $(".error.name").css({ display: "none" });
@@ -1398,6 +1398,12 @@ $(document).ready(function () {
         $("#modal-adress-forms").fadeOut("slow");
         $("#thanks").fadeIn("slow");
         $("form").trigger("reset");
+
+        // чистим коризну и и обновляем картинку на пустую корзину и текст под каждім товаром
+        cart = [];
+        $('.catalog__items__item__content__cart > img').attr("src", "icons/shopping-cart.svg");
+        $('.catalog__items__item__content__cart > .catalog__items__item__content__cart__text').text('Добавить в корзину'); 
+        cartAssArrFunction();
       });
       return false;
     } {
@@ -1498,6 +1504,5 @@ $(document).ready(function () {
       },
     ],
   });
-  
 });
 
