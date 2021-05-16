@@ -340,7 +340,7 @@
     <div class="modal modal_mini" id="form">
       <div id="close-form" class="modal__close">&times;</div>
       <div class="modal__subtitle">Заполните пожалуйста форму</div>
-      <form class="modal__form" action="#" id="order-form">
+      <form class="modal__form" action="#" id="consult-form">
         <label for="check1" class="error name">Введите пожалуйста ваше имя</label>
         <input id="name-consult-field" class="modal__form__input" name="name" type="text" placeholder="Ваше имя">
   
@@ -370,12 +370,15 @@
 
 
   <!-- Свой скрипт -->
+  <script defer src="js/catalog.js"></script>
   <script defer src="js/jquery-1.10.2.min.js"></script>
+  <script defer src="js/buyer.js"></script>
   <script defer type="text/javascript">let phonePrefix = '+380';</script>
   <script defer src="js/phonePrefix.js"></script>
   <script defer src="js/slick.min.js"></script>
   <script defer src="js/script.js?ver=shopp-mrkt-27"></script>
-  
+  <script defer src="js/send-msgs.js"></script>
+  <script defer src="js/sliders.js"></script>
 </body>
 
 </html>

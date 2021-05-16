@@ -6,7 +6,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean": "^0.4.0",
@@ -23,7 +24,5 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {
-    "del": "^6.0.0"
-  }
+  "dependencies": {}
 }

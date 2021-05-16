@@ -1,24 +1,25 @@
 const gulp        = require('gulp');
-const browserSync = require('browser-sync');
+const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
-const clean = require('gulp-clean');
+const del = require('del');
+
 
 gulp.task('server', function() {
-
-    browserSync({
-        server: {
-            baseDir: "dist"
-        }
-    });
-
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    browserSync.init({
+        proxy: 'shopp-mrkt', //имя папочки где лежит в папке openserver/domains, так же настроить в самом openservere что индекс файл был с папки build/index.php
+        notify: false,
+        online: true // если нет инетта, ставим false
+    })
 });
 
+gulp.task('del', function() {
+    return del(["./dist/**/*", "!" + "./dist/img/**/*"])
+});
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
@@ -39,7 +40,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src("src/*.html")
+    return gulp.src("src/*.php")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist/'));
 });
